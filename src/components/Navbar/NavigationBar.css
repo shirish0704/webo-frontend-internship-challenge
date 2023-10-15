@@ -1,0 +1,30 @@
+.navbar {
+  padding: 25px 0 0 117px;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 237px;
+  align-items: center;
+}
+
+.navbar__list--menu {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 100px;
+}
+
+.navbar__button {
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+}
+
+.navbar__button--start {
+  background: #4f46ba;
+  padding: 16px 36px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
