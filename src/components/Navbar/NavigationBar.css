@@ -1,5 +1,8 @@
 .navbar {
-  padding: 25px 0 0 117px;
+  padding: 38px 117px 0 117px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar__list {

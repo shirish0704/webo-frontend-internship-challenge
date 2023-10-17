@@ -6,9 +6,9 @@ const NavigationBar = () => {
   return (
     <>
       <nav className="navbar">
-        <Navbar fluid className=" bg-transparent p-0">
+        <Navbar fluid className=" bg-transparent p-0 flex ">
           <div className="navbar__logo flex items-center">
-            <Navbar.Brand href="https://flowbite-react.com">
+            <Navbar.Brand href="/">
               <span className="self-center whitespace-nowrap text-[20px] font-[700]">
                 AR SHAKIR
               </span>
@@ -18,26 +18,28 @@ const NavigationBar = () => {
             <Navbar.Toggle />
           </div>
           <Navbar.Collapse>
-            <div className="navbar__list">
-              <div className="navbar__list--menu flex gap-[39px]">
-                <Navbar.Link
-                  className="text-black flex items-center gap-[12px]"
-                  href="#"
-                >
-                  Product <BsChevronDown />
-                </Navbar.Link>
-                <Navbar.Link
-                  className="text-black flex items-center gap-[12px]"
-                  href="#"
-                >
-                  Template <BsChevronDown />
-                </Navbar.Link>
-                <Navbar.Link className="text-black" href="#">
-                  Blog
-                </Navbar.Link>
-                <Navbar.Link className="text-black" href="#">
-                  Pricing
-                </Navbar.Link>
+            <div className="navbar__menu flex ">
+              <div className="navbar__list ">
+                <div className="navbar__list--menu flex gap-[39px]">
+                  <Navbar.Link
+                    className="text-black flex items-center gap-[12px]"
+                    href="#"
+                  >
+                    Product <BsChevronDown />
+                  </Navbar.Link>
+                  <Navbar.Link
+                    className="text-black flex items-center gap-[12px]"
+                    href="#"
+                  >
+                    Template <BsChevronDown />
+                  </Navbar.Link>
+                  <Navbar.Link className="text-black" href="#">
+                    Blog
+                  </Navbar.Link>
+                  <Navbar.Link className="text-black" href="#">
+                    Pricing
+                  </Navbar.Link>
+                </div>
               </div>
               <div className="navbar__button">
                 <button className="navbar__button--sign">Sign In</button>
