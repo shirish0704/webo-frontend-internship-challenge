@@ -1,0 +1,157 @@
+.features {
+  padding: 140px 119px;
+  background: #c9e7f2;
+}
+
+.features__heading {
+  font-size: 71px;
+  font-weight: 800;
+  line-height: 66px;
+  letter-spacing: -2.13px;
+}
+
+.features__para {
+  margin-top: 37px;
+  width: 557px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.32px;
+}
+
+.features {
+  position: relative;
+}
+
+.features__image {
+  position: absolute;
+  bottom: 97px;
+  left: -7px;
+}
+
+.features__card {
+  margin-top: 51px;
+}
+
+.features__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.features__card--section {
+  border-radius: 10px;
+  border: 1px solid #abc8d2;
+  background-color: #fff;
+  height: 338px;
+  padding: 53px 50px 43px 31px;
+}
+
+.features__card--image {
+  width: 55px;
+  height: 45px;
+  margin-bottom: 33px;
+}
+
+.features__card--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__card--heading {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: -0.66px;
+  margin-bottom: 16px;
+}
+
+.features__card--para {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+}
+
+.features__card--split {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  gap: 32px;
+}
+
+.features--split__card {
+  height: 153px;
+  padding: 42px 37px;
+  border-radius: 10px;
+  border: 1px solid #abc8d2;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.split--text {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: -0.66px;
+}
+
+.section__testimonials {
+  padding: 150px 0 119px 150px;
+}
+
+.testimonials__head--heading {
+  font-size: 71px;
+  font-weight: 800;
+  line-height: 66px;
+  letter-spacing: -2.13px;
+  margin-bottom: 37px;
+}
+
+.testimonials__head--para {
+  width: 570px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.32px;
+}
+
+.swipe__testimonial {
+  width: 699px;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  position: relative;
+  margin-top: 74px;
+  padding: 26px 25px 26px 40px;
+}
+
+.swipe--quote {
+  position: absolute;
+  left: 35px;
+  top: -30px;
+  z-index: 99;
+}
+
+.swiper__container {
+  display: flex;
+  gap: 26px;
+}
+
+.swipe--para {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  padding-top: 53px;
+  margin-bottom: 41px;
+}
+
+.swipe--name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px; /* 110% */
+  letter-spacing: -0.4px;
+}
