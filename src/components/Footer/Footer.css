@@ -1,0 +1,112 @@
+.footer {
+  padding: 0 119px 58px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.shakir__heading {
+  color: #1b1c31;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.42px;
+}
+
+.shakir__para {
+  color: #757095;
+  width: 213px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  margin-top: 18px;
+}
+
+.shakir__icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 31px;
+}
+
+.footer__heading {
+  color: #181433;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.footer__company--list {
+  padding-bottom: 18px;
+}
+
+.footer__company--list:nth-child(4) {
+  padding-bottom: 0px;
+}
+
+.footer__resources--list {
+  padding-bottom: 12px;
+}
+
+.footer__resources--list:nth-child(4) {
+  padding-bottom: 0px;
+}
+
+.footer__company--list,
+.footer__resources--list {
+  color: #181433;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.footer__review {
+  display: flex;
+  margin-top: 24px;
+}
+
+.footer__review input {
+  padding: 15px;
+  outline: none;
+  border: none;
+  width: 240px;
+  background-color: #eeeeff;
+}
+
+.review--button {
+  background-color: #3734a9;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+  padding: 13px 40px;
+}
+
+.review--para {
+  width: 329px;
+  color: rgba(24, 20, 51, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+  margin-top: 21px;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer__copyright--para {
+  color: #181433;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+}
