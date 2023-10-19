@@ -25,3 +25,9 @@
     padding: 70px 65px;
   }
 }
+
+@media (width < 470px) {
+  .companies__title {
+    font-size: 14px;
+  }
+}

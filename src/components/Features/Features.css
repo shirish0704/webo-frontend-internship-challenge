@@ -329,3 +329,37 @@
     padding-left: 30px;
   }
 }
+
+@media (width<470px) {
+  .features__para {
+    width: auto;
+  }
+
+  .features__image {
+    display: none;
+  }
+
+  .section__testimonials {
+    display: none;
+  }
+
+  .stats {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .stats__para {
+    margin-bottom: 50px;
+  }
+
+  .stats__line {
+    display: none;
+  }
+
+  .active--content span,
+  .stars--content span,
+  .transactions--content span {
+    margin-bottom: 50px;
+  }
+}

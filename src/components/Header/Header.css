@@ -141,7 +141,7 @@
 
 @media (width <= 768px) {
   .header {
-    height: 110vh;
+    height: 130vh;
   }
   .hero__right--img {
     display: none;

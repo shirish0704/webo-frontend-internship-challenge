@@ -344,3 +344,36 @@
     line-height: 45px;
   }
 }
+
+@media (width < 1024px) {
+  .blog {
+    padding: 30px 28px;
+  }
+  .blog__posts--top {
+    width: 99%;
+  }
+
+  .posts__top--heading {
+    width: auto;
+  }
+
+  .posts__heading {
+    width: auto;
+  }
+
+  .faq__image2 {
+    display: none;
+  }
+
+  .faq {
+    padding-left: 14px;
+    padding-top: 20px;
+    padding-right: 14px;
+  }
+
+  .faq__heading {
+    font-size: 40px;
+    line-height: 55px;
+    width: auto;
+  }
+}
