@@ -13,6 +13,7 @@
 .blog__posts {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 29px;
 }
 
@@ -58,6 +59,7 @@
 .blog__post--bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 28px;
 }
 
@@ -112,6 +114,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 71px;
+  gap: 30px;
 }
 
 .faq__questions {
@@ -146,6 +149,7 @@
 }
 
 .faq__morequestions {
+  width: 401px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,7 +157,6 @@
   text-align: center;
   padding: 67px 32px 32px 32px;
   width: 401px;
-  height: 512px;
   border-radius: 10px;
   border: 1px solid #cfcfcf;
   background: #fff;
@@ -204,7 +207,7 @@
 .cta__content {
   background-image: url("/images/cta.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,4 +236,111 @@
   font-weight: 700;
   line-height: 30px;
   letter-spacing: -0.36px;
+}
+
+@media (width < 1280px) {
+  .blog {
+    padding: 110px 88px;
+  }
+
+  .blog__heading {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 45px;
+  }
+
+  .blog__posts--top {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .blog__posts--top img {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  .blog__post--bottom {
+    justify-content: space-evenly;
+  }
+
+  .questions--para {
+    width: auto;
+  }
+
+  .faq {
+    padding-left: 89px;
+    padding-right: 87px;
+  }
+
+  .faq__heading {
+    font-size: 45px;
+    line-height: 55px;
+    width: 344px;
+  }
+
+  .faq__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta {
+    padding: 110px 80px;
+  }
+
+  .cta__content {
+    width: 800px;
+    padding: 50px 150px;
+  }
+
+  .cta__heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .cta__button {
+    padding: 14px 30px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (width < 1024px) {
+  .blog {
+    padding: 80px 48px;
+  }
+
+  .blog__posts {
+    align-items: center;
+  }
+
+  .blog__posts--top {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .blog__posts--top img {
+    width: auto;
+    object-fit: cover;
+  }
+
+  .cta {
+    padding: 80px 40px;
+  }
+
+  .cta__content {
+    width: 700px;
+    height: 300px;
+    padding: 20px 10px;
+    background-image: none;
+    background-color: #3734a9;
+    border-radius: 20px;
+  }
+
+  .cta__heading {
+    font-size: 35px;
+    width: 90%;
+    line-height: 45px;
+  }
 }

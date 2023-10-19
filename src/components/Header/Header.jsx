@@ -17,14 +17,14 @@ const Header = () => {
               Yet bed any for travelling assistance indulgence unpleasing. Not
               thoughts all exercise blessing.
             </p>
-            <div className="hero__left--btn flex gap-[50px]">
-              <button className="bg-[#3734A9] text-white text-[0.9rem] leading-[25px] py-[12px] px-[38px] rounded-[47px]">
+            <div className="hero__left--btn flex gap-[50px] max-[1280px]:gap-7">
+              <button className="bg-[#3734A9] text-white text-[16px] leading-[25px] py-[15px] px-[38px] rounded-[47px] max-[1280px]:w-fit">
                 Get Started
               </button>
               <div className="hero__left--btn__right">
-                <div className="btn__right--icon flex items-center gap-[11px]">
-                  <AiFillPlayCircle className="fill-[#22D497] h-[56px] w-[56px]" />
-                  <h3 className="text-[14px] text-[#3734A9] font-[500] leading-[30px] tracking-[-0.34px]">
+                <div className="btn__right--icon flex items-center gap-[11px] max-[1280px]:gap-[8px]">
+                  <AiFillPlayCircle className="fill-[#22D497] h-[60px] w-[60px] max-[1280px]:h-[54px] max-[1280px]:w-[54px]" />
+                  <h3 className="text-[17px] text-[#3734A9] font-[500] leading-[30px] tracking-[-0.34px]">
                     See How It Works
                   </h3>
                 </div>

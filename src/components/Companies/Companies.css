@@ -17,4 +17,11 @@
   gap: 50px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (width < 1280px) {
+  .companies {
+    padding: 70px 65px;
+  }
 }

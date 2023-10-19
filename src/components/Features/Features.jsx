@@ -74,16 +74,32 @@ const Features = () => {
             heard oh ought. His defective nor convinced residence own.
           </p>
         </div>
-        <div className="testimonials__swipe">
+        <div className="testimonials__swipe max-[1280px]:ml-[-100px] max-[1280px]:pb-[110px] max-[1024px]:ml-[55px] ">
           <Swiper
-            slidesPerView={1.6}
+            slidesPerView={1}
+            breakpoints={{
+              768: {
+                slidesPerView: 0.8,
+                spaceBetween: 50,
+              },
+              1024: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              1280: {
+                slidesPerView: 1.4,
+              },
+              1600: {
+                slidesPerView: 1.6,
+              },
+            }}
             spaceBetween={10}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper"
+            className="mySwiper "
           >
             <SwiperSlide>
-              <div className="swipe__testimonial">
+              <div className="swipe__testimonial ">
                 <img src="/images/quotes.svg" alt="" className="swipe--quote" />
                 <div className="swiper__container">
                   <div className="swipe text">

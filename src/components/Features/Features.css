@@ -1,5 +1,6 @@
 .features {
   padding: 140px 119px;
+  position: relative;
   background: #c9e7f2;
 }
 
@@ -19,10 +20,6 @@
   letter-spacing: -0.32px;
 }
 
-.features {
-  position: relative;
-}
-
 .features__image {
   position: absolute;
   bottom: 97px;
@@ -31,9 +28,6 @@
 
 .features__card {
   margin-top: 51px;
-}
-
-.features__card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -166,6 +160,12 @@
   letter-spacing: -0.4px;
 }
 
+.swiper__container img {
+  width: 240px;
+  height: 350px;
+  object-fit: cover;
+}
+
 .stats {
   height: 256px;
   background-color: #3734a9;
@@ -216,4 +216,116 @@
   font-weight: 400;
   line-height: 31px;
   letter-spacing: -0.6px;
+}
+
+@media (width<1280px) {
+  .features {
+    padding: 110px 100px;
+  }
+
+  .features__heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .features__para {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+
+  .features__card--section {
+    height: auto;
+  }
+
+  .features--split__card {
+    height: auto;
+    padding: 10px 25px;
+  }
+
+  .section__testimonials {
+    padding: 0;
+  }
+
+  .testimonials__image {
+    right: 80px;
+    top: 141px;
+  }
+
+  .testimonials__head--heading {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 20px;
+    padding-top: 110px;
+    padding-left: 110px;
+  }
+
+  .testimonials__head--para {
+    padding-left: 110px;
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 30px;
+  }
+
+  .swipe__testimonial {
+    padding: 16px 15px 16px 20px;
+  }
+
+  .swiper__container {
+    display: flex;
+    gap: 26px;
+  }
+
+  .stats {
+    padding-left: 70px;
+    padding-right: 120px;
+  }
+
+  .stats__para {
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 11px;
+  }
+
+  .stats__line {
+    margin-right: 20px;
+  }
+
+  .active__header,
+  .stars__header,
+  .transactions__header {
+    font-size: 52px;
+    line-height: 55px;
+  }
+
+  .active--content span,
+  .stars--content span,
+  .transactions--content span {
+    font-size: 20px;
+  }
+}
+
+@media (width<1024px) {
+  .features {
+    padding: 80px 50px;
+  }
+
+  .features__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials__image {
+    right: 50px;
+    top: 101px;
+  }
+
+  .testimonials__head--heading {
+    padding-top: 80px;
+    padding-left: 30px;
+  }
+
+  .testimonials__head--para {
+    padding-left: 30px;
+  }
 }

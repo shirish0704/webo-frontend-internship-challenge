@@ -1,33 +1,137 @@
 .navbar {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  align-items: center;
+  justify-items: stretch;
   padding: 38px 117px 0 117px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  background-color: transparent;
 }
 
-.navbar__list {
+.navbar__brand {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+  background-color: none !important;
+}
+
+.navbar__menu {
   display: flex;
-  gap: 237px;
+  font-size: 14px;
+  font-weight: 500;
   align-items: center;
 }
 
-.navbar__list--menu {
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 100px;
+.navbar__center {
+  display: flex;
+  gap: 26px;
 }
 
-.navbar__button {
+.navbar__menu .navbar__right {
+  display: none;
+}
+
+.navbar__right {
+  margin-left: auto;
   display: flex;
   gap: 50px;
-  font-size: 14px;
 }
 
-.navbar__button--start {
-  background: #4f46ba;
-  padding: 16px 36px;
+.navbar__right--button1 {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar__right--button2 {
+  background-color: #4f46ba;
   color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+  padding: 16px 36px;
+}
+
+@media (width <= 1280px) {
+  .navbar {
+    padding: 38px 100px 0 80px;
+    grid-template-columns: 0.8fr 1fr 1fr;
+  }
+}
+
+@media (width <= 1024px) {
+  .navbar {
+    padding: 38px 40px 0 40px;
+    grid-template-columns: 0.8fr 1fr 1fr;
+  }
+
+  .navbar__center {
+    gap: 14px;
+  }
+
+  .navbar__right {
+    gap: 20px;
+  }
+
+  .navbar__right--button2 {
+    font-size: 12px;
+    padding: 12px 22px;
+  }
+}
+
+@media (width <= 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar__items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+  }
+
+  .navbar__menu {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .navbar__menu.open .navbar__right {
+    display: flex;
+    margin: 20px 0 0;
+  }
+
+  .navbar__center {
+    flex-direction: column;
+  }
 }

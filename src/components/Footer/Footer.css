@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 59px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .shakir__heading {
@@ -109,4 +111,10 @@
   font-weight: 500;
   line-height: 26px;
   letter-spacing: -0.32px;
+}
+
+@media (width < 1280px) {
+  .footer {
+    padding: 0 70px 40px;
+  }
 }

@@ -6,34 +6,37 @@
 
 .hero {
   display: flex;
-  gap: 140px;
+  width: 100%;
   height: calc(100% - 90px);
   position: relative;
 }
 
 .hero__left {
-  padding: 80px 0 0 121px;
+  padding: 163px 0 0 121px;
   width: 50%;
 }
 
 .hero__left--heading {
-  font-size: 46px;
+  color: #000;
+  font-size: 60px;
   font-weight: 800;
-  line-height: 60px;
+  line-height: 80px;
   letter-spacing: -1.8px;
 }
 
 .hero__left--para {
   color: #64607d;
-  font-size: 1.17rem;
-  padding: 20px 120px 32px 0;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 28px; /* 150% */
+  line-height: 30px;
+  width: 510px;
+  margin-top: 22px;
   letter-spacing: -0.4px;
 }
 
 .hero__left--btn {
-  padding-bottom: 35px;
+  margin-top: 56px;
+  margin-bottom: 53px;
 }
 
 .hero__right {
@@ -66,4 +69,92 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+@media (width <= 1600px) {
+  .hero__left {
+    padding: 130px 0 0 121px;
+  }
+
+  .hero__left--heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .hero__left--para {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero__left--btn {
+    margin-top: 54px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (width < 1280px) {
+  .hero__left {
+    padding: 100px 0 0 100px;
+  }
+
+  .hero__left--heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero__left--para {
+    width: auto;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .hero__left--btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width < 1024px) {
+  .header {
+    height: 110vh;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+    gap: 5rem;
+  }
+
+  .hero__left {
+    width: 100%;
+    padding: 8px 80px 0 121px;
+  }
+
+  .hero__left--btn {
+    margin-top: 26px;
+    margin-bottom: 33px;
+  }
+
+  .hero__right--img {
+    margin-left: 200px;
+  }
+}
+
+@media (width <= 768px) {
+  .header {
+    height: 110vh;
+  }
+  .hero__right--img {
+    display: none;
+  }
+}
+
+@media (width <= 470px) {
+  .hero__left {
+    width: 100%;
+    padding: 8px 10px 0 25px;
+  }
+
+  .hero__design--two {
+    display: none;
+  }
 }
